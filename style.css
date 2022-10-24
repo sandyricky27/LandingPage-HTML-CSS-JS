@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 70px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+header .container {
+
+    background-color: #fff;
+    width: 100%;
+    z-index: 100;
+}
+
+header h1 {
+    display: inline-block;
+    float: left;
+    padding: 15px 24px;
+
+}
+
+section {
+    padding: 50px 0;
+}
+
+header ul {
+    float: right;
+}
+
+header ul li {
+    display: inline-block;
+    padding: 24px;
+}
+
+#hero {
+    background-color: #f1f1f1;
+    height: 451px;
+    margin-bottom: 50px;
+}
+
+#hero img {
+    height: 500px;
+    float: right;
+    margin-right: 100px;
+
+}
+
+
+.her {
+    height: 300px;
+    width: 100%;
+}
+
+#hero span,
+.p {
+    color: rgb(34, 35, 36);
+    padding: 10px;
+    margin-top: -10px;
+}
+
+#hero span {
+    margin-left: 13px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.btn {
+    margin-left: 20px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: gray;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.p {
+    font-size: 30px;
+
+}
+
+/* #tentang{
+    background-color: aqua;
+} */
+
+#tentang .t2 h3 {
+    text-align: center;
+}
+
+#tentang .t2 p {
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    text-indent: 30px;
+    line-height: 25px;
+}
+
+#tentang img {
+    margin-left: 40px;
+    height: 400px;
+    width: 400px;
+
+}
+
+.t1 {
+    width: 50%;
+    left: -1000px;
+    display: inline-block;
+    height: 400px;
+}
+
+.t2 {
+
+    width: 45%;
+    float: right;
+    height: 400px;
+    margin-right: 50px;
+}
+
+#tentang .r1 img {
+    position: absolute;
+    z-index: -1;
+    opacity: 0.9;
+    height: 330px;
+    width: 330px;
+    right: 0px;
+}
+
+.r1 {
+
+    margin-top: 30px;
+    height: 330px;
+    width: 330px;
+    position: absolute;
+    right: 690px;
+    z-index: 1;
+}
+
+
+.r2 {
+    margin-left: 40px;
+    height: 330px;
+    width: 40%;
+    position: absolute;
+
+}
+
+#tentang .t1 .r1 h3,
+p {
+    color: #fff;
+    text-align: left;
+    margin: 14px;
+}
+
+#tentang .t1 .r1 h3 {
+    margin-top: 20px;
+    font-size: 30px;
+    font-style: none;
+    margin-left: 30px;
+}
+
+#tentang .t1 .r1 p {
+    margin-left: 30px;
+}
+
+
+.r1 .bar {
+    height: 4px;
+    background-color: rgb(185, 184, 184);
+    margin: 0px 30px 0px 30px;
+    border-radius: 10px;
+}
+
+.bar .nilai {
+
+    height: 4px;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    border-radius: 10px;
+    ;
+}
+
+.html {
+    width: 100%;
+}
+
+.css {
+    width: 90%;
+}
+
+.js {
+    width: 80%;
+}
+
+.php {
+    width: 95%;
+}
+
+.ps {
+    width: 85%;
+}
+
+/* Css Portofolio */
+
+#porto {
+    background-color: #f9f9f9;
+}
+
+.containerP {
+    text-align: center;
+}
+
+.containerP::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.jumbo {
+    margin: 20px 50px 20px 20px;
+    height: 400px;
+    width: 400px;
+}
+
+.kanan {
+    justify-content: center;
+    text-align: center;
+    margin-right: 50px;
+    float: right;
+    height: 440px;
+    width: 43%;
+
+}
+
+.thumbnail {
+
+    margin: 10px 0px 0px 80px;
+    width: 45%;
+    float: left;
+}
+
+.thumb {
+    margin: 7px;
+    filter: grayscale(120%);
+    filter: blur(100%);
+    height: 100px;
+    width: 100px;
+    box-sizing: border-box;
+}
+
+.thumb:hover {
+    cursor: pointer;
+}
+
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade {
+    opacity: 0;
+    animation: fade 0.5s forwards;
+}
+
+.active {
+    opacity: 0.5;
+}
+
+/* css untuk nav mobile */
+
+.mobile-menu {
+    float: right;
+    display: none;
+    padding: 18px;
+}
+
+.mobile-menu:hover {
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: -400px;
+    width: 100%;
+    background-color: rgba(165, 165, 165, 0.9);
+    transition: .3s;
+    z-index: 1;
+}
+
+.sidebar ul li a {
+    color: #fff;
+}
+
+.sidebar ul li {
+    padding: 24px;
+    transition: .3s;
+    transition-property: background-color;
+}
+
+.sidebar ul li:hover {
+    background-color: #F84744;
+}
+
+#check:checked~.sidebar {
+    top: 70px;
+
+}
+
+/* CSS untuk Kontak */
+.col3 {
+    width: 33.33%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    padding: 50px 10px;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.col3 p {
+    text-align: center;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+footer small {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    #hero img {
+        display: none;
+    }
+
+    #hero {
+        margin-bottom: 0;
+    }
+
+    .t1 {
+
+        width: 100%;
+        height: 250px;
+    }
+
+    .r1 {
+        background-color: #333;
+        margin-top: 0px;
+        right: 0px;
+        width: 100%;
+        
+    }
+
+    .r1 .bar {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #tentang .t1 .r1 h3 {
+        margin-top: 20px;
+        font-size: 22px;
+        font-style: none;
+        margin-left: 30px;
+        text-align: center;
+    }
+
+    #tentang .t1 .r1 p {
+        margin-left: 50px;
+    }
+
+    .r1 img {
+        display: none;
+    }
+
+    .r2 {
+        display: none;
+    }
+
+    .t2 {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        margin-right: 0px;
+    }
+
+    #tentang img {
+        height: 50%;
+        width: 50%;
+    }
+
+    #porto {
+        
+        width: 100%;
+        height: 100%;
+    }
+    .thumb:hover {
+        cursor: none;
+    }
+
+    .thumbnail {
+
+       margin: 0px;
+        width: 100%;
+        float: none;
+    }
+    
+    .thumb {
+        margin: 4px;
+        filter: none;
+        height: 200px;
+        width: 200px;
+        box-sizing: border-box;
+    }
+
+    #porto .kanan {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    header ul {
+        display: none;
+    }
+
+    .col3 {
+        width: 100%;
+    }
+
+    #contact{
+        
+    }
+    .active {
+        opacity: 1;
+    }
+}
